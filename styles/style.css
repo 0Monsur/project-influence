@@ -149,6 +149,60 @@ header h1{
     color: #E02C6D;
 }
 
+  /* works  starts */
+    
+#works-section{
+    margin: 5rem 10rem;
+}
+
+#works-section h2{
+text-align: center;
+font-size: 48px;
+}
+
+.works-container{
+    display: flex;
+    
+}
+
+.my-works{
+    background-color: rgb(236, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.my-works img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20px;
+}
+
+.my-works h4{
+    font-size: 18px;
+}
+
+.ui, .web{
+    margin-right: 20px;
+}
+
+/* works  ends */
+
+/* footer */
+#footer{
+    background-color: #0A0826;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+#footer .social-icon i{
+    margin-right: 5px;
+    font-size: 24px;
+}
 
 
 
@@ -185,6 +239,14 @@ header h1{
         row-gap: 20px;
         column-gap: 10px;
     }
+
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
 }
 
 @media (max-width: 768px){
@@ -213,5 +275,11 @@ header h1{
     .see-more{
         margin-right: 1rem;
         
+    }
+
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      
     }
 }
